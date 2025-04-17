@@ -6,20 +6,35 @@
     <title>WebDev Groupwork</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     
+    <style>
+        .accordion {
+            --bs-accordion-btn-bg:  #212529;
+            --bs-accordion-btn-color: white;
+            --bs-accordion-btn-focus-box-shadow: none;
+            --bs-accordion-active-bg: #10482e;
+            --bs-accordion-active-color: white;
+            --bs-accordion-bg: #212529;
+            --bs-accordion-color: white;
+            --bs-accordion-border-color: #198754;
+        }
+
+        .accordion-button::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23198754'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        }      
+
+        .accordion-button:not(.collapsed)::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23198754'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        }
+
+    </style>
+
 </head>
 <body class="bg-dark text-white">
 
     <!-- Navigation Bar (Same as index.html) -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
         <div class="container-fluid">
-
-          <a class="navbar-brand fw-bold" href="index.html">THE</a>
-
-            <a class="navbar-brand fw-bold" href="index.html">
-              <img src="images/navbar-hulk-png.png" alt="HULK Logo" style="height: 40px;">
-            </a>
-  
-            <a class="navbar-brand fw-bold" href="index.html" style="font-family: f;">HULK</a>
+            <a class="navbar-brand fw-bold" href="index.html">HULK</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -37,17 +52,17 @@
                     <li class="nav-item">
                         <a class="nav-link" href="Characterisations.html">Characterisations</a>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="SupportingCharacters.html">Supporting Characters</a>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="SupportingCharacters.html">Supporting Characters</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="CulturalImpact.html">Cultural Impact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="OtherVersions.html">Alternate Versions</a>
+                        <a class="nav-link" href="OtherVersions.html">Alternate Versions</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Other.html">Other Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="CulturalImpact.html">Cultural Impact</a>
                     </li>
                 </ul>
             </div>
@@ -66,9 +81,9 @@
                             Over the long publication history of the Hulk's adventures, many recurring characters have featured prominently, including his best friend and sidekick Rick Jones, love interest and wife Betty Ross and her father, the often adversarial General "Thunderbolt" Ross. Both Banner and Hulk have families created in their respective personas. Banner is son to Brian, an abusive father who killed Banner's mother while she tried to protect her son from his father's delusional attacks, and cousin to Jennifer Walters, the She-Hulk, who serves as his frequent ally.[149] Banner had a stillborn child with Betty, while the Hulk has two sons with his deceased second wife Caiera Oldstrong, Skaar and Hiro-Kala, and his DNA was used to create a daughter named Lyra with Thundra the warrior woman
                         </p>
                         <p class="card-text text-white">
-                            A number of alternate universes and alternate timelines in Marvel Comics publications allow writers to introduce variations on the Hulk, in which the character's origins, behavior, and morality differ from the mainstream setting. In some stories, someone other than Bruce Banner is the Hulk.
+                            A number of alternate universes and alternate timelines in Marvel Comics publications allow writers to introduce variations on the Hulk, in which the character's origins, behavior, and morality differ from the mainstream setting.[175][176] In some stories, someone other than Bruce Banner is the Hulk.
 
-In some versions, the Hulk succumbs to the darker side of his nature: in "Future Imperfect" (December 1992), a future version of the Hulk has become the Maestro, the tyrannical and ruthless ruler of a nuclear war-irradiated Earth, and in "Old Man Logan" (2008), an insane Hulk rules over a post-apocalyptic California and leads a gang of his inbred Hulk children created with his first cousin She-Hulk
+In some versions, the Hulk succumbs to the darker side of his nature: in "Future Imperfect" (December 1992), a future version of the Hulk has become the Maestro, the tyrannical and ruthless ruler of a nuclear war-irradiated Earth,[177] and in "Old Man Logan" (2008), an insane Hulk rules over a post-apocalyptic California and leads a gang of his inbred Hulk children created with his first cousin She-Hulk
                         </p>
                     </div>
                 </div>
@@ -142,7 +157,7 @@ In some versions, the Hulk succumbs to the darker side of his nature: in "Future
                         </h2>
                         <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <p>In the Bullet Points mini-series, Peter Parker finds himself on the test site for a Gamma bomb and absorbs a large dose of gamma radiation, becoming the Hulk. In a further twist, later in the series, in an attempt to find a cure for Peter, Dr. Bruce Banner examines specimens taken from the test site and is bitten by a radioactive spider, becoming Spider-Man. Parker is killed by Galactus and Banner is killed by an Inheritor during the Spider-Verse event.</p>
+                                <p>In the Bullet Points mini-series, Peter Parker finds himself on the test site for a Gamma bomb and absorbs a large dose of gamma radiation, becoming the Hulk. In a further twist, later in the series, in an attempt to find a cure for Peter, Dr. Bruce Banner examines specimens taken from the test site and is bitten by a radioactive spider, becoming Spider-Man.[185] Parker is killed by Galactus and Banner is killed by an Inheritor during the Spider-Verse event.</p>
                             </div>
                         </div>
                     </div>
@@ -156,7 +171,7 @@ In some versions, the Hulk succumbs to the darker side of his nature: in "Future
                         </h2>
                         <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <p>In the Deadpool: Samurai manga series, which takes place on Earth-346, Bruce Banner removes a control collar from the singer Neiro Aratabi, who had been saved from a deranged fan by Deadpool. Banner then attempts to transform into the Hulk to help Deadpool stop HYDRA agents from retrieving the Gateway Controller, which had been hidden under the Tokyo Dome, but he was knocked unconscious by a piece of falling debris before he could finish his transformation. Banner did gradually regain consciousness and he then completed transforming into the Hulk, but he was quickly defeated by Thanos, who had been summoned by the Hydra agents.</p>
+                                <p>In the Deadpool: Samurai manga series, which takes place on Earth-346,[186] Bruce Banner removes a control collar from the singer Neiro Aratabi, who had been saved from a deranged fan by Deadpool. Banner then attempts to transform into the Hulk to help Deadpool stop HYDRA agents from retrieving the Gateway Controller, which had been hidden under the Tokyo Dome, but he was knocked unconscious by a piece of falling debris before he could finish his transformation.[187] Banner did gradually regain consciousness and he then completed transforming into the Hulk, but he was quickly defeated by Thanos, who had been summoned by the Hydra agents.</p>
                             </div>
                         </div>
                     </div>
@@ -187,7 +202,7 @@ In some versions, the Hulk succumbs to the darker side of his nature: in "Future
                                 <p>Numerous alternate versions of the Hulk have been present in the Exiles series.</p>
                                 <ul>
                                     <li>A crazy version of the Hulk was seen attacking Canada. He was stopped by the Exiles and Alpha Flight. This battle featured the first appearance of the rogue reality jumpers known as Weapon X. The crazy Hulk was presumed dead after this encounter.</li>
-                                    <li>Another visually different Hulk appeared in this universe. This version had a long ponytail and wore a "Peace Out" costume, but he still retained his gamma-irradiated appearance, strength and his famous smashing abilities. He teamed up with an evil Firestar and was recruited by the Timebroker to stop an evil Hyperion. The plan succeeded and they both joined Weapon X. When Hyperion had gone even crazier than before, Hulk attacked and Weapon X began to fight with each other. This version of The Hulk was killed when Hyperion brutally fought him until he was in a weakened state, Hyperion then used his heat vision on The Hulk, melting and destroying him. His body is sent back to his reality, where his funeral is held. Some time after Hulk's death, Firestar committed suicide when she incinerates herself and a teammate.</li>
+                                    <li>Another visually different Hulk appeared in this universe. This version had a long ponytail and wore a "Peace Out" costume, but he still retained his gamma-irradiated appearance, strength and his famous smashing abilities. He teamed up with an evil Firestar and was recruited by the Timebroker to stop an evil Hyperion.[190] The plan succeeded and they both joined Weapon X. When Hyperion had gone even crazier than before, Hulk attacked and Weapon X began to fight with each other. This version of The Hulk was killed when Hyperion brutally fought him until he was in a weakened state, Hyperion then used his heat vision on The Hulk, melting and destroying him.[191] His body is sent back to his reality, where his funeral is held. Some time after Hulk's death, Firestar committed suicide when she incinerates herself and a teammate.</li>
                                     <li>A conqueror version of the Hulk, in his gladiator outfit, killed Annihilus, most of the superhumans, took full control of the Annihilation Wave, and decimated Earth. He has been apparently knocked unconscious by the Exiles. It is unknown if he survived this incident. This version is even more insane than the other alternate versions of the Hulk. While the Exiles had been dealing with Proteus, Hulk's Annihilation Wave killed many of the superhumans which should not have happened if not for Proteus. A new version of the Exiles have been present showing the surviving superhumans and they all have one goal: to stop Hulk and his Annihilation Wave, in which they apparently succeeded.</li>
                                 </ul>
                             </div>
@@ -203,7 +218,7 @@ In some versions, the Hulk succumbs to the darker side of his nature: in "Future
                         </h2>
                         <div id="collapse9" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <p>In the Hulk 1999 Annual, writer John Byrne revised the Hulk's origin, much like his Spider-Man: Chapter One. In the revised origin, the Gamma Bomb that was being tested is now a gamma laser, and a Skrull was responsible for Rick Jones' presence on the base during the gamma test. The Skrull also disguised himself as Igor Rasminsky (Drenkov in the original stories), a fellow scientist working on the project. The contemporary setting removes the Cold War context of the original story, and serves as a tie-in to the Marvel: The Lost Generation maxi-series created by Roger Stern and Byrne, which also brought the origins of many Marvel characters out of the 1960s and into contemporary times. The storyline is currently designated as set on Earth-9992, and is not part of mainstream Marvel continuity (Earth-616).</p>
+                                <p>In the Hulk 1999 Annual, writer John Byrne revised the Hulk's origin, much like his Spider-Man: Chapter One. In the revised origin, the Gamma Bomb that was being tested is now a gamma laser, and a Skrull was responsible for Rick Jones' presence on the base during the gamma test. The Skrull also disguised himself as Igor Rasminsky (Drenkov in the original stories), a fellow scientist working on the project. The contemporary setting removes the Cold War context of the original story, and serves as a tie-in to the Marvel: The Lost Generation maxi-series created by Roger Stern and Byrne, which also brought the origins of many Marvel characters out of the 1960s and into contemporary times.[192][193] The storyline is currently designated as set on Earth-9992, and is not part of mainstream Marvel continuity (Earth-616).</p>
                             </div>
                         </div>
                     </div>
@@ -304,13 +319,13 @@ In some versions, the Hulk succumbs to the darker side of his nature: in "Future
                         </h2>
                         <div id="collapse16" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <h2>Marvel Zombies: Dead Days</h2>
+                                <p><strong>Marvel Zombies: Dead Days</strong><p>
                                 <P>In the series Marvel Zombies, the Hulk has been infected with a virus which makes him into an undead zombie (he is actually infected by the zombie Fantastic Four). Although he still retains his strength and invulnerability, he no longer heals, is losing weight because of his now-deteriorating tissue, does not feel pain and now craves human flesh. The zombie Hulk's transformations are physically controlled purely by his appetite — after feeding, he transforms back into Banner, who is also a zombie, until the hunger returns. When Hulk first transforms back into Banner, his stomach starts to burst. He is directly responsible for killing the Silver Surfer by biting off his head. Later he joins Spider-Man, Iron-Man, Giant-Man, Wolverine and Luke Cage as the Galacti after killing and consuming Galactus.</P>
-                                <h2>Marvel Zombies 2</h2>
+                                <p><strong>Marvel Zombies 2</strong></p>
                                 <p>Forty years later, the zombie Hulk, along with the other zombies, had eaten or converted most of the universe, prompting them to return to Earth to try to recover the dimensional transporter. Although the other zombies managed to beat their hunger by going without food for a time, the Hulk's raw hunger was too great for him to be convinced to stop, resulting in him killing the zombified but "cured" Iron Man, Jean Grey, Hawkeye, and Firelord. Once he feeds and returns to Bruce Banner, he is finally killed by Spider-Man, Wolverine, and Giant-Man, recognizing that there is no other way to stop the Hulk from feeding again.</p>
-                                <h2>Marvel Zombies 3</h2>
+                                <p><strong>Marvel Zombies 3</strong></p>
                                 <p>Hulk makes a cameo appearance in Marvel Zombies 3 when Machine Man, Ultron, and Jocasta travel to Earth 2149, killing winged zombies (zombie Beak, Angel, Vulture, and Falcon altogether). He also makes another cameo appearance when Vanessa Fisk explains to the 3 androids how the Silver Surfer died, and how the zombie Kingpin, who is, surprisingly, her husband, created a zombie empire forming a huge alliance.</p>
-                                <h2>Marvel Zombies Return</h2>
+                                <p><strong>Marvel Zombies Return</strong></p>
                                 <p>A second Hulk appears in the reality the Marvel Zombies of the original series are teleported to, known as Earth-Z. This version's life appears identical to his core counterpart up until the events of World War Hulk. When he reaches the Moon to attack the Inhumans, he is infected by the zombie Giant-Man, and his allies killed. Oddly hungry, he heads back to Earth and begins eating people, and ultimately infecting the Sentry, who sets about forming a team of Zombie Avengers to eat humanity and wipe out any competition or resistance from other heroes, infected or otherwise dead. After the Sentry tries to kill Hulk to eliminate the competition as the two are the only creatures capable of challenging each other, Hulk is later cured of his hunger by the Zombie Spider-Man and joins his New Avengers. The team succeeds in killing the Zombie Avengers and ending their plan to eat the multiverse, sacrificing themselves in the process. Ultimately, the nanite infused Sandman killed Hulk.</p>
 
                             </div>
@@ -448,7 +463,7 @@ In some versions, the Hulk succumbs to the darker side of his nature: in "Future
                         </h2>
                         <div id="collapse25" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <p>An alternate universe variant of Bruce Banner / Hulk from Earth-1610 appears in the Ultimate Marvel imprint. This version is a scientist working for S.H.I.E.L.D. who gained his powers from an attempt to recreate the Super-Soldier Formula that created Captain America. Additionally, Hulk is depicted as more malicious, representing Banner's hidden emotions and id.</p>
+                                <p>An alternate universe variant of Bruce Banner / Hulk from Earth-1610 appears in the Ultimate Marvel imprint. This version is a scientist working for S.H.I.E.L.D. who gained his powers from an attempt to recreate the Super-Soldier Formula that created Captain America.[213] Additionally, Hulk is depicted as more malicious, representing Banner's hidden emotions and id.</p>
                             </div>
                         </div>
                     </div>
